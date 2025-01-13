@@ -10,7 +10,7 @@ test('Retrieve user posts', async ({ request }) => {
 });
 
 //Retreives 1 user post
-test('Retrieve user post', async ({request}) => {
+test('Retrieve 1 user post', async ({request}) => {
   const res = await request.get('/posts/1');
   expect(res.ok()).toBeTruthy();
   expect (res.status()).toBe(200);
