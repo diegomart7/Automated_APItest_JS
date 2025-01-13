@@ -1,6 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-//just a test for git
+
+//Retreives all user posts
 test('Retrieve user posts', async ({ request }) => {
   const res = await request.get('/posts');
   expect(res.ok()).toBeTruthy();
@@ -8,6 +9,7 @@ test('Retrieve user posts', async ({ request }) => {
 
 });
 
+//Retreives 1 user post
 test('Retrieve user post', async ({request}) => {
   const res = await request.get('/posts/1');
   expect(res.ok()).toBeTruthy();
