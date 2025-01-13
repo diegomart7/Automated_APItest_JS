@@ -18,5 +18,4 @@ test('Retrieve 1 user post', async ({request}) => {
     "id":1,
     "userId":1,
   }))
-
 });
