@@ -2,7 +2,10 @@
   "name": "api_testing_js",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test --reporter=html",
+    "cucumber": "cucumber-js src/features/**/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -13,6 +16,7 @@
   },
   "dependencies": {
     "@cucumber/cucumber": "^11.2.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   }
 }
